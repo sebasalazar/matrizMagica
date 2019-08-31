@@ -92,6 +92,6 @@ bool Matriz::esMagico() {
 
 std::string Matriz::toString() {
     std::stringstream ss;
-    ss << '[' << this->matriz[0][0] << ',' << this->matriz[0][1] << ',' << this->matriz[0][2] << ';' << this->matriz[1][0] << ',' << this->matriz[1][1] << ',' << this->matriz[1][2] << ';' << this->matriz[2][0] << ',' << this->matriz[2][1] << ',' << this->matriz[2][2] + ']' << std::endl;
+    ss << '[' << this->matriz[0][0] << ',' << this->matriz[0][1] << ',' << this->matriz[0][2] << ';' << this->matriz[1][0] << ',' << this->matriz[1][1] << ',' << this->matriz[1][2] << ';' << this->matriz[2][0] << ',' << this->matriz[2][1] << ',' << this->matriz[2][2] << ']' << std::endl;
     return ss.str();
 }
