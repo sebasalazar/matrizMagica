@@ -21,6 +21,6 @@ all: clean main.o menu.o Matriz.o
 	rm -fr build
 
 clean:
-	rm -fr *.o a.out programa dist build
+	rm -fr *.o a.out programa dist build core
 
 .DEFAULT_GOAL := all

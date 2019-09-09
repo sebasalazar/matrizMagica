@@ -23,6 +23,15 @@ int main(int argc, char** argv) {
                     salida.write(str.c_str(), str.size());
                 }
 
+                std::cout << std::endl << "==========" << std::endl;
+                std::cout << matriz.toWolframAlpha();
+                std::cout << std::endl << "Determinante: " << matriz.getDeterminante() << std::endl;
+
+                if (matriz.getDeterminante() != 0.0) {
+                    Matriz invertida = matriz.invertida();
+                    std::cout << std::endl << invertida.mostrar() << std::endl;
+                }
+
                 linea.clear();
             }
 

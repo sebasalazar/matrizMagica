@@ -11,14 +11,23 @@
 class Matriz {
 public:
     Matriz();
+    Matriz(double** orig);
     Matriz(const std::string& orig);
     Matriz(const Matriz& orig);
+    int getDimension();
+    double getDeterminante();
     virtual ~Matriz();
 
     bool esMagico();
     std::string toString();
+    std::string toWolframAlpha();
+    std::string mostrar();
+    Matriz invertida();
+    Matriz invertir();
 private:
-    int matriz[LARGO][LARGO];
+    double determinante;
+    double** matriz;
+    void calcularDeterminante();
 };
 
 #endif /* MATRIZ_H */
